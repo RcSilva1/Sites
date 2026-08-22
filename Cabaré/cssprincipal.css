@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #faf1e5;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+
+}
+
+p {
+    padding: 1rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
+
+}
+
+.inicio {
+
+    text-align: center;
+}
+
+header {
+
+    background-color: #f9dfb8;
+    border: 3px solid #b58855;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.imagem {
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    margin-right: 2rem;
+    width: 20rem;
+    margin-bottom: 0.5rem;
+    float: left;
+    margin-left: 2rem;
+
+
+}
+
+.final {
+
+    margin-bottom: 5rem;
+}
+
+.nome {
+
+    text-align: center;
+    font-size: 2.8rem;
+
+}
+
+
+.conhecer {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    align-items: start;
+}
+
+.conhecer details {
+    background: #f9dfb8;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: left;
+    border: 3px solid #b58855;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.conhecer details:hover {
+    transform: translateY(-3px);
+}
+
+.conhecer summary {
+    font-size: 1.4rem;
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;    
+}
+
+
+.historiascabare details {
+    background: #f9dfb8;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    border: 3px solid #b58855;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.historiascabare summary {
+    font-size: 1.4rem;
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;
+    list-style: none
+}
+
+.historiascabare details:hover {
+    transform: translateY(-3px);
+}
+
+
+details img{
+    margin-top: 1rem;
+}
+
+details p{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.conheca {
+    padding: 1rem;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.historiascabare h2,
+.historiascabare h3{
+    padding: 1rem;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+
+}
+
+
+.momento {
+    padding: 2rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.videos {
+    column-count: 3; /* número de colunas desejadas */
+    column-gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 3px solid #b58855;
+    border-radius: 15px;
+    background-color: #f9dfb8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.item {
+    break-inside: avoid;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.item img,
+.item video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #b58855;
+}
+
+.item:hover img,
+.item:hover video {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsivo */
+@media (max-width: 1024px) { .videos { column-count: 2; } }
+@media (max-width: 600px) { .videos { column-count: 1; } }
+
+footer{
+
+    background-color: #f9dfb8;
+    border: 3px solid #b58855;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 1rem;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: #886ff7;       /* pode ajustar */
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: #b58855;    /* muda cor ao passar o mouse */
+}
+
+.a{
+    margin-left: 2rem;
+}

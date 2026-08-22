@@ -1,0 +1,842 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 230, 175);
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header  {
+    background-color: rgba(134, 1, 1, 0.95);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+header a{
+    padding: 1rem;  
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(255, 230, 175);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: rgb(255, 230, 175);
+}
+
+p {
+    font-weight: 500;
+}
+
+summary {
+    font-weight: 500;
+}
+
+.face_logo, .foto_identidades {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit:contain;
+    transition: transform 0.1s ease-in-out;     
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.584);
+}
+
+.imagem {
+    width: 40%;
+}
+
+
+.titulo {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "Google Sans", sans-serif;
+    margin-top: 2rem;
+}
+
+
+.quem_somos, .face, .identidades {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.logo {
+    transition: transform 0.1s ease-in-out;
+}
+
+.logo:hover, .padrinho img:hover, .face_logo:hover, .foto_identidades:hover{
+    transform: scale(1.04)
+}
+
+.face .texto, .identidades .texto {
+    max-width: 60%;
+}
+
+.texto {
+    justify-content: center;
+    margin-top: 4rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    margin-bottom: 5rem;
+    background-color: rgba(159, 2, 2, 0.95);
+    padding: 1rem;
+
+}
+
+.texto p{
+    margin: 1.3rem;
+    font-size: 1.6rem; 
+
+}
+
+
+.face .texto {
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.5);
+}
+
+.fundo_padrinho {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(to bottom, rgba(162, 0, 0, 0.95)  79%,rgb(255, 230, 175) 100% )
+}
+
+.padrinho {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+
+}
+
+.padrinho h3 {
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 230, 175);
+    white-space: nowrap;
+    font-family: "Google Sans", sans-serif;
+}
+
+.padrinho p {
+    font-size: 1.6rem;
+    color:rgb(255, 230, 175);   
+}
+
+.padrinho img {
+    max-width: 80%;
+    margin-top: 2rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,5);
+    transition: transform 0.1s ease-in-out;
+}
+
+.lado_direito_padrinho {
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    margin-right: 3rem;
+    width: 60%;
+    text-align: center;
+
+}
+
+.lado_esquerdo_padrinho {
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+.aba_face, .aba_identidades {
+    background-color: rgba(162, 0, 0, 0.95);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Google Sans", sans-serif;
+    padding-left: 0;
+
+}
+
+.aba_face {
+    margin-bottom: 6rem;
+}
+
+.nosso_livro, .nosso_pais {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.nosso_livro .imagem {
+    width: 40%;
+}
+
+.nosso_livro p, .nosso_pais p {
+    color: black;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.nosso_livro .titulo , .nosso_pais .titulo{
+    margin-top: 2rem;
+    color: rgba(162, 0, 0, 0.95);
+
+}
+
+.nosso_livro .titulo {
+    font-size: 3rem;
+}
+
+.nosso_livro .nosso_livro_texto , .nosso_pais .nosso_pais_texto{
+    margin-top: 2rem;
+}
+
+.parte_texto_pais {
+    display: flex;
+    flex-direction: column;
+    background-image: 
+        linear-gradient(to bottom, rgb(255, 230, 175) 10%, rgba(255, 230, 175, 0) 40%),
+        url("../imagens/fundo_mexico.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.nosso_pais {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.titulo_mexico {
+    padding: 0;
+    color: rgb(162, 0, 0);
+    margin: 0 auto;
+    font-size: 7rem;
+    font-weight: 500;
+    width: 23rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(147, 0, 0);
+    margin-top: 8rem;
+}
+
+.nosso_pais_texto {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    background: linear-gradient(rgba(162, 0, 0, 0.806) 70%, rgb(162, 0, 0) 100%);
+    border-radius: 15px 15px 0 0;
+    border: solid 5px rgba(162, 0, 0, 0.95);
+    box-shadow: 0px 0px 10px rgb(162, 0, 0);
+    border-bottom: none;
+}
+
+.nosso_pais p {
+    color: rgb(255, 230, 175);
+    margin-left: 2rem;
+}
+
+details[open], .grid, details[open] .grid_identides {
+    max-height: 10000px;
+    transition: max-height 1s ease-in-out
+}
+
+details {
+    max-height: 6.2rem;;
+    overflow: hidden;
+}
+
+details[open] .grid, details[open] .grid_identidades {
+    animation: abrir_aba 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes abrir_aba {
+    0% {opacity: 0; transform: translateY(-70px)}
+    100% {opacity: 100%; transform: translateY(0)}
+}
+
+
+.fotos_face, .fotos_identidades {
+
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+.grid_identidades {
+    padding-bottom: 2rem;
+}
+
+.video, .melhores_momentos img {
+    border-radius: 5px;
+    transition: transform 0.1s ease-in-out;
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+    margin: 0.4rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 2rem;
+
+}
+
+.item {
+    grid-row: span var(--rows, 1);
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+
+}
+
+.item img,
+.item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    border: solid 2px black
+}
+
+.item img {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.item:hover, .grid_identidades video:hover {
+    transform: scale(1.03);
+    transition: transform 0.1s ease-in-out;
+    z-index: 1;
+}
+
+.melhores_momentos {
+    background: linear-gradient(rgb(162, 0, 0) 90%, rgb(162, 0, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.melhores_momentos .titulo{
+    margin: 0 auto;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    color: rgb(255, 230, 175)
+}
+
+.melhores_momentos .grid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*------------------------------------------------
+                      ANIMAÇÔES
+  ------------------------------------------------*/
+
+.esquerda, .direita, .cima, .baixo {
+    transition: all 0.5s ease-in-out;
+}
+
+.esquerda.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.direita.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.cima.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.baixo.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.esquerda {
+    opacity: 0;
+    transform: translateX(-70px);
+}
+
+.direita {
+    opacity: 0;
+    transform: translateX(70px);
+}
+
+.cima {
+    opacity: 0;
+    transform: translateY(-70px);
+}
+
+.baixo {
+    opacity: 0;
+    transform: translateY(70px);
+}
+
+/*------------------------------------------------
+                      FOOTER
+  ------------------------------------------------*/
+
+footer {
+    background-color: rgba(134, 1, 1, 0.95); 
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 230, 175);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 230, 175);
+}
+
+/*------------------------------------------------
+                Estilização mobile
+  ------------------------------------------------*/
+
+@media (max-width: 900px) {
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    header .link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    header a, header p {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    header p {
+        margin-bottom: 0.5rem;
+    }
+
+    .logo {
+        max-width: 180px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .imagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .face_logo, 
+    .foto_identidades {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .titulo {
+        font-size: 2rem;
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+    }
+
+    .quem_somos, 
+    .face, 
+    .identidades {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem auto;
+        gap: 1rem;
+    }
+
+    .texto {
+        width: 100% !important;
+        max-width: 100%;
+        margin: 1rem auto !important;
+        padding: 1rem;
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .texto p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 1rem;
+        text-align: justify;
+    }
+
+    .face .texto, 
+    .identidades .texto {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    .fundo_padrinho {
+        padding: 1rem 0;
+    }
+
+    .padrinho {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .lado_esquerdo_padrinho {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+        order: 2;
+    }
+
+    .lado_direito_padrinho {
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+        text-align: center;
+        order: 1;
+    }
+
+    .padrinho h3 {
+        font-size: 1.3rem;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .padrinho p {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .padrinho img {
+        max-width: 80%;
+        width: auto;
+        height: auto;
+        margin: 1rem auto;
+    }
+
+    .aba_face, 
+    .aba_identidades {
+        width: 95%;
+        margin: 1.5rem auto;
+        padding: 0.5rem;
+    }
+
+    .fotos_face, 
+    .fotos_identidades {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 10px;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .grid_identidades {
+        padding-bottom: 1rem;
+    }
+
+    .item {
+        margin: 0;
+        padding: 0;
+        line-height: 0;
+    }
+
+    .nosso_livro,
+    .nosso_pais {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem auto;
+    }
+
+    .nosso_pais {
+        margin-bottom: 0;
+    }
+
+    .nosso_livro .imagem,
+    .nosso_pais .imagem {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .nosso_livro .titulo {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    .nosso_livro p,
+    .nosso_pais p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+        text-align: justify;
+    }
+
+    .parte_texto_pais {
+        background-position: center top;
+        background-size: cover;
+        padding: 1rem 0;
+    }
+
+    .titulo_mexico {
+        font-size: 2.5rem;
+        width: auto;
+        margin: 2rem auto;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        white-space: normal;
+    }
+
+    .nosso_pais_texto {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .nosso_pais_texto p {
+        margin-left: 0;
+        padding: 0.5rem;
+    }
+
+    .melhores_momentos {
+        padding: 1rem 0;
+    }
+
+    .melhores_momentos .titulo {
+        font-size: 1.8rem;
+        margin: 2rem auto;
+    }
+
+    .melhores_momentos .grid {
+        width: 95%;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    /*Animações Mobile*/
+
+    .esquerda, 
+    .direita {
+        transform: translateY(50px);
+        opacity: 0;
+        transition: all 0.6s ease-out;
+    }
+
+    .esquerda.show, 
+    .direita.show,
+    .cima.show,
+    .baixo.show {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    .cima, .baixo {
+        transition: all 0.6s ease-out;
+    }
+
+    /*Continuação*/
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 0 0.3rem;
+    }
+
+    details {
+        max-height: 5rem;
+    }
+
+    details[open] {
+        max-height: 10000px;
+    }
+
+    .logo:hover, 
+    .padrinho img:hover, 
+    .face_logo:hover, 
+    .foto_identidades:hover,
+    .item:hover {
+        transform: none;
+    }
+
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+        word-wrap: break-word;
+    }
+
+    p {
+        word-wrap: break-word;
+    }
+
+    .face .texto, 
+    .identidades .texto {
+        box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 0.5rem 0;
+    }
+
+    .item img,
+    .item video {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .titulo {
+        font-size: 1.5rem;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 8px;
+        padding: 0.8rem;
+    }
+    
+    .texto p {
+        font-size: 0.9rem;
+        margin: 0.8rem;
+    }
+    
+    .padrinho h3 {
+        font-size: 1.1rem;
+    }
+    
+    .padrinho p {
+        font-size: 0.9rem;
+    }
+    
+    .fotos_face, 
+    .fotos_identidades {
+        font-size: 1rem;
+    }
+    
+    .titulo_mexico {
+        font-size: 2rem;
+    }
+    
+    header a, header p {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+    
+    .logo {
+        max-width: 150px;
+    }
+    
+    .face_logo, 
+    .foto_identidades {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    .melhores_momentos .grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+
+@media (max-width: 900px) and (orientation: landscape) {
+    
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+    
+    .face_logo, 
+    .foto_identidades {
+        max-width: 250px;
+    }
+    
+    .padrinho img {
+        max-width: 60%;
+    }
+    
+    .texto p {
+        font-size: 0.95rem;
+    }
+}
