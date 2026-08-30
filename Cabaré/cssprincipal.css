@@ -191,9 +191,6 @@ details p{
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-/* Responsivo */
-@media (max-width: 1024px) { .videos { column-count: 2; } }
-@media (max-width: 600px) { .videos { column-count: 1; } }
 
 footer{
 
@@ -219,4 +216,35 @@ footer a:hover {
 
 .a{
     margin-left: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+    .videos { 
+        column-count: 2; 
+    }
+
+    .conhecer {
+        grid-template-columns: repeat(1, 1fr); 
+    } 
+
+    .conhecer summary {
+        text-align: center;
+    }
+    
+    footer {
+        padding: 1.5rem;
+        font-size: 1rem;
+
+    }
+    footer p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .videos {
+        column-count: 1; 
+    } 
 }
