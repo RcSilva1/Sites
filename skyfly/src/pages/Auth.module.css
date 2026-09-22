@@ -1,0 +1,127 @@
+.wrap {
+  min-height: calc(100vh - 68px - 260px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: var(--space-8);
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.title {
+  font-size: var(--step-2);
+}
+
+.subtitle {
+  color: var(--text-on-paper-muted);
+  font-size: var(--step--1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field label {
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+.field input {
+  border: var(--border-w) solid var(--color-line);
+  border-radius: var(--radius-sm);
+  padding: 0.7rem var(--space-3);
+  background: var(--color-paper-raised);
+  font-size: var(--step--1);
+}
+
+.field input:focus-visible {
+  border-color: var(--color-brass);
+}
+
+.fieldError input {
+  border-color: var(--color-rust);
+}
+
+.errorText {
+  font-size: 0.8rem;
+  color: var(--color-rust);
+}
+
+.checkboxField {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  font-size: 0.85rem;
+  color: var(--text-on-paper-muted);
+}
+
+.checkboxField input {
+  margin-top: 3px;
+}
+
+.formError {
+  background: #fbeceb;
+  border: var(--border-w) solid var(--color-rust);
+  color: var(--color-rust);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--step--1);
+}
+
+.formNotice {
+  background: #eaf2f0;
+  border: var(--border-w) solid var(--color-teal);
+  color: var(--color-teal);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--step--1);
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--step--1);
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.footerLinks a {
+  color: var(--color-navy);
+  font-weight: 500;
+  text-decoration: none;
+}
+.footerLinks a:hover {
+  color: var(--color-brass-dark);
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--color-navy);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: inherit;
+  text-decoration: underline;
+}

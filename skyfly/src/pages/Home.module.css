@@ -1,0 +1,151 @@
+.hero {
+  background: var(--color-navy);
+  color: var(--text-on-navy);
+}
+
+.heroInner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: var(--space-8);
+  padding-block: var(--space-9) var(--space-8);
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 560px;
+}
+
+.headline {
+  font-size: var(--step-4);
+  color: var(--text-on-navy);
+}
+
+.subhead {
+  font-size: var(--step-0);
+  color: var(--text-on-navy-muted);
+  max-width: 46ch;
+}
+
+.heroActions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.heroSecondaryBtn {
+  color: var(--text-on-navy) !important;
+}
+.heroSecondaryBtn:hover {
+  background: var(--text-on-navy) !important;
+  color: var(--color-navy) !important;
+}
+
+.heroArt {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  align-items: end;
+  margin-bottom: var(--space-6);
+}
+
+.sectionTitle {
+  font-size: var(--step-3);
+  margin-top: var(--space-2);
+}
+
+.introCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.introCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.introNumber {
+  font-family: var(--font-mono);
+  color: var(--color-brass-dark);
+  font-size: var(--step--1);
+}
+
+.levelsSection {
+  background: var(--color-paper-raised);
+  border-top: var(--border-w) solid var(--color-line);
+  border-bottom: var(--border-w) solid var(--color-line);
+}
+
+.levelsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.levelCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.levelBenefits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--step--1);
+  color: var(--text-on-paper-muted);
+}
+
+.levelBenefits li::before {
+  content: "— ";
+  color: var(--color-brass-dark);
+}
+
+.ctaBand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+  background: var(--color-paper-raised);
+  border: var(--border-w) solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-7);
+}
+
+@media (max-width: 900px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+  .introGrid {
+    grid-template-columns: 1fr;
+  }
+  .introCards {
+    grid-template-columns: 1fr;
+  }
+  .levelsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .levelsGrid {
+    grid-template-columns: 1fr;
+  }
+  .ctaBand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,81 @@
+/*
+  SKYFLY — Sistema de design
+  ---------------------------------
+  Conceito: painel de informações de aeroporto. Números grandes de milhas
+  usam uma fonte monoespaçada com "tabular numbers", lembrando os antigos
+  painéis de embarque (split-flap displays). A paleta é de aviação noturna:
+  azul profundo, quase-preto azulado e um dourado de metal (latão de
+  instrumentos), sem gradientes chamativos ou glassmorphism.
+*/
+
+:root {
+  /* ---- Cor: base ---- */
+  --color-ink: #0e1a2b;          /* texto principal / fundo escuro */
+  --color-ink-soft: #223449;     /* texto secundário sobre claro */
+  --color-navy: #12253f;         /* superfícies escuras (hero, footer) */
+  --color-navy-raised: #17304f;  /* cartões sobre fundo escuro */
+  --color-paper: #f6f5f1;        /* fundo claro principal */
+  --color-paper-raised: #ffffff; /* cartões sobre fundo claro */
+  --color-line: #dcd8cd;         /* bordas discretas sobre claro */
+  --color-line-dark: #2c4059;    /* bordas discretas sobre escuro */
+
+  /* ---- Cor: marca ---- */
+  --color-brass: #c89b3c;        /* dourado — destaque principal */
+  --color-brass-dark: #a17a26;
+  --color-teal: #3e7c74;         /* verde-azulado — sucesso / acúmulo */
+  --color-rust: #b1503a;         /* alerta / saída de milhas */
+
+  /* ---- Texto sobre cada superfície ---- */
+  --text-on-paper: var(--color-ink);
+  --text-on-paper-muted: #5b6a7a;
+  --text-on-navy: #eef1f4;
+  --text-on-navy-muted: #9fb0c3;
+
+  /* ---- Tipografia ---- */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+
+  --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.05rem);
+  --step-1: clamp(1.2rem, 1.15rem + 0.25vw, 1.35rem);
+  --step-2: clamp(1.5rem, 1.4rem + 0.5vw, 1.85rem);
+  --step-3: clamp(2rem, 1.8rem + 1vw, 2.75rem);
+  --step-4: clamp(2.6rem, 2.2rem + 2vw, 3.75rem);
+  --step-5: clamp(3.2rem, 2.6rem + 3vw, 5rem);
+
+  /* ---- Espaçamento ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  /* ---- Layout ---- */
+  --content-max: 1180px;
+  --content-narrow: 720px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --border-w: 1px;
+
+  /* ---- Sombra (usada com extrema moderação) ---- */
+  --shadow-card: 0 1px 2px rgba(14, 26, 43, 0.06), 0 8px 24px -12px rgba(14, 26, 43, 0.18);
+
+  /* ---- Movimento ---- */
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-standard: 320ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,30 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.number {
+  font-weight: 700;
+  color: inherit;
+  line-height: 1;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.04em;
+  color: var(--text-on-navy-muted);
+}
+
+.lg .number {
+  font-size: var(--step-5);
+}
+
+.md .number {
+  font-size: var(--step-3);
+}
+
+.sm .number {
+  font-size: var(--step-2);
+}

@@ -1,0 +1,91 @@
+.heroCard {
+  background: var(--color-navy);
+  color: var(--text-on-navy);
+  border-radius: var(--radius-md);
+  padding: var(--space-7);
+  margin-top: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.heroTop {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.heroStats {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.heroStats > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.heroStats span.board-number,
+.heroStats > div > span:last-child {
+  font-size: var(--step-1);
+  font-weight: 600;
+}
+
+.heroStatLabel {
+  font-size: 0.75rem;
+  color: var(--text-on-navy-muted);
+  font-family: var(--font-mono);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-5);
+  margin-block: var(--space-6) var(--space-9);
+  align-items: start;
+}
+
+.cardTitle {
+  font-size: var(--step-1);
+  margin-bottom: var(--space-1);
+}
+
+.quickLinks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.levelInfo {
+  border-top: var(--border-w) solid var(--color-line);
+  padding-top: var(--space-4);
+}
+
+.benefitList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--step--1);
+  color: var(--text-on-paper-muted);
+  margin-top: var(--space-2);
+}
+
+.benefitList li::before {
+  content: "— ";
+  color: var(--color-brass-dark);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,108 @@
+.wrap {
+  padding-block: var(--space-6) var(--space-9);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-size: var(--step-3);
+  margin-top: var(--space-2);
+  max-width: 24ch;
+}
+
+.balancePill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-1);
+  background: var(--color-navy);
+  color: var(--text-on-navy);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md);
+}
+
+.balancePill span {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-on-navy-muted);
+}
+
+.balancePill strong {
+  font-size: var(--step-1);
+}
+
+.filters {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-6);
+}
+
+.filterBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: var(--border-w) solid var(--color-line);
+  background: var(--color-paper-raised);
+  font-size: var(--step--1);
+  cursor: pointer;
+  transition: border-color var(--duration-fast) var(--ease-standard);
+}
+
+.filterBtn:hover {
+  border-color: var(--color-brass);
+}
+
+.filterActive {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--text-on-navy);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.modalSummary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  border-top: var(--border-w) solid var(--color-line);
+  border-bottom: var(--border-w) solid var(--color-line);
+  padding-block: var(--space-3);
+}
+
+.modalSummary > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--step--1);
+}
+
+.summaryLabel {
+  color: var(--text-on-paper-muted);
+}
+
+.insufficient {
+  font-size: var(--step--1);
+  color: var(--color-rust);
+}
+
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}

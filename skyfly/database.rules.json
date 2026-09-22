@@ -1,0 +1,67 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+
+        "name": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 120"
+        },
+        "email": {
+          ".validate": "newData.isString()"
+        },
+        "milesBalance": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "milesAccumulated": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "milesRedeemed": {
+          ".validate": "newData.isNumber() && newData.val() >= 0"
+        },
+        "level": {
+          ".validate": "newData.isString()"
+        },
+        "createdAt": {
+          ".validate": "newData.isNumber()"
+        },
+
+        "$other": {
+          ".validate": false
+        }
+      }
+    },
+
+    "transactions": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+
+        "$transactionId": {
+          ".write": "auth != null && auth.uid === $uid && !data.exists()",
+          ".validate": "newData.hasChildren(['type', 'amount', 'description', 'date'])",
+
+          "type": {
+            ".validate": "newData.isString() && (newData.val() === 'accumulate' || newData.val() === 'redeem')"
+          },
+          "amount": {
+            ".validate": "newData.isNumber() && newData.val() > 0"
+          },
+          "description": {
+            ".validate": "newData.isString() && newData.val().length <= 200"
+          },
+          "date": {
+            ".validate": "newData.isNumber()"
+          },
+
+          "$other": {
+            ".validate": false
+          }
+        }
+      }
+    }
+  }
+}

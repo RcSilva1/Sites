@@ -1,0 +1,102 @@
+.intro {
+  background: var(--color-navy);
+  color: var(--text-on-navy);
+  padding-block: var(--space-8);
+}
+
+.title {
+  font-size: var(--step-4);
+  margin-top: var(--space-2);
+  max-width: 18ch;
+}
+
+.lead {
+  margin-top: var(--space-4);
+  max-width: 60ch;
+  color: var(--text-on-navy-muted);
+  font-size: var(--step-1);
+}
+
+.sectionTitle {
+  font-size: var(--step-2);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-6);
+  max-width: 32ch;
+}
+
+.altSection {
+  background: var(--color-paper-raised);
+  border-top: var(--border-w) solid var(--color-line);
+  border-bottom: var(--border-w) solid var(--color-line);
+}
+
+.flow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.flowStep {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex: 1;
+  min-width: 160px;
+}
+
+.flowStep p {
+  font-weight: 500;
+  font-size: var(--step--1);
+}
+
+.flowIndex {
+  font-size: var(--step-1);
+  font-weight: 700;
+  color: var(--color-brass-dark);
+}
+
+.flowArrow {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .flowArrow {
+    display: block;
+    width: 28px;
+    height: 1px;
+    background: var(--color-line);
+    margin-left: auto;
+  }
+}
+
+.exampleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+.exampleTitle {
+  font-size: var(--step-0);
+  margin-bottom: var(--space-2);
+}
+
+.simulatorCard {
+  max-width: 480px;
+}
+
+.ctaBand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+  background: var(--color-paper-raised);
+  border: var(--border-w) solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-7);
+}
+
+.ctaBand h2 {
+  margin: 0;
+}

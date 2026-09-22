@@ -1,0 +1,43 @@
+.wrap {
+  padding-block: var(--space-6) var(--space-9);
+}
+
+.title {
+  font-size: var(--step-3);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.filters {
+  display: flex;
+  gap: var(--space-2);
+  margin-block: var(--space-5);
+}
+
+.filterBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: var(--border-w) solid var(--color-line);
+  background: var(--color-paper-raised);
+  font-size: var(--step--1);
+  cursor: pointer;
+}
+
+.filterBtn:hover {
+  border-color: var(--color-brass);
+}
+
+.filterActive {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--text-on-navy);
+}
+
+.card {
+  max-width: 720px;
+}
+
+.errorText {
+  color: var(--color-rust);
+  padding: var(--space-4) 0;
+}

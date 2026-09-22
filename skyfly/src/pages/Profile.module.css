@@ -1,0 +1,96 @@
+.wrap {
+  padding-block: var(--space-6) var(--space-9);
+}
+
+.title {
+  font-size: var(--step-3);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.summaryList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.summaryList > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: var(--space-3);
+  border-bottom: var(--border-w) solid var(--color-line);
+}
+
+.summaryList > div:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.summaryList dt {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-on-paper-muted);
+}
+
+.summaryList dd {
+  margin: 0;
+  font-weight: 500;
+  font-size: var(--step-0);
+}
+
+.uid {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 400;
+  word-break: break-all;
+  color: var(--text-on-paper-muted);
+}
+
+.cardTitle {
+  font-size: var(--step-1);
+  margin-bottom: var(--space-3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.field label {
+  font-size: var(--step--1);
+  font-weight: 500;
+}
+
+.field input {
+  border: var(--border-w) solid var(--color-line);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem var(--space-3);
+  font-size: var(--step--1);
+}
+
+.dangerZone {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: var(--border-w) solid var(--color-line);
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
